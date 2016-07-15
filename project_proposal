@@ -1,0 +1,27 @@
+CAPSTONE PROJECT PROPOSAL
+Brijal Patel
+1.	What is the problem you want to solve?
+Social media (i.e twitter) allows data scientists to identify mood changes by observing people’s twitter statements about their opinions, activities and general well-being. Existing research provides indication that the stock market is driven by moods of investors. This project will attempt to test this idea and will able to answer the following business- oriented questions:
+I.	How much trust should the investor put in twitter sentiment analysis while they are investing into shares of large market cap and/or medium and small companies?
+II.	Should companies invest based off of twitter sentiments to increase their increase short term capitalization?
+III.	How is the predictive power of Twitter compared with different parameters such as media announcements, FED announcements, Bloomberg etc.
+2.	Who is your client and why do they care about this problem? In other words, what will your client DO or DECIDE based on your analysis that they wouldn’t have otherwise?
+I.	Investors who cannot afford the commercial solution of twitter sentiments
+II.	Companies or Investors who want to invest for short term 	based on reception of certain product/idea by the general population
+3.	What data are you going to use for this? How will you acquire this data?
+I.	Twitter API and a dedicated R library (“twitteR”)
+II.	Still deciding on how to collect data variable for model
+4.	In brief, outline your approach to solving this problem (knowing that this might change later).
+I.	I will observer 15 companies: 5 large market Capitalization Company (i.e. google, amazon, etc), 5 medium capitalization company and 5 publicly traded companies. The steps are following:
+1.	Scrape the twitter feeds of each company.
+2.	Twitter feeds will be split into three different category positive, negative and neutral.
+3.	Try to forecast closing price for stock will be higher than today or lower than today.
+4.	The model will be attuned to deliberate Weighted Social Mood Index by translating the number of followers into weights. Weighted Social Mood Index will be calculated by dividing the number of weighted positive mood states by the sum of weighted positive and negative mood states.
+5.	The above Model will applied to each company.
+6.	Additional parameter will be added for comparison with initial prediction.
+
+5.	What are your deliverables? Typically, this would include code, along with a paper and/or a slide deck.
+I.	R code
+II.	Project Report
+III.	Slide deck
+
